@@ -5,10 +5,13 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
+  
     
   ],
   imports: [
