@@ -1,0 +1,35 @@
+<h1>This is second component</h1>
+<h2>{{title}}</h2>
+
+<div *ngIf="status;else test">
+<label>This is tops tech</label>
+</div>
+<ng-template #test>
+<div>
+    <label>this is else blck</label>
+</div>
+</ng-template>
+<button type="button"  [disabled]="status" (click)="adddata()" class="btn btn-primary">Click Me</button>
+<div class="container">
+ <table class="table"> 
+
+    <tr>
+        <th>
+            empid
+        </th>
+        <th>
+            empName
+        </th>
+        <th>
+            empadd
+        </th>
+    </tr>
+    <tr *ngFor="let c of listdata">
+<td>{{c.empId}}</td>
+<td>{{c.empName}}</td>
+<td>{{c.empAdd}}</td>
+    </tr>
+ </table>
+
+</div>
+
